@@ -1,11 +1,8 @@
-def Check(par):
+def Check():
+    n = 0
     for line in f:
-        if line.upper().find(s.upper())!= -1:
-           par = par+1
-    if par == 0:
-        print 'No match found'
-    else:
-        print 'The word is found', par ,'times'
+        n = n + line.upper().count(s.upper())
+    print 'The word is found', n ,'times'
 
 while True:
     try:
@@ -17,5 +14,5 @@ while True:
         
 s = raw_input('Enter the word you will found in the text: ')
 print 'Searching:', s
-Check(0)
+Check()
 f.close()
