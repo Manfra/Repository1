@@ -6,7 +6,7 @@ def Check():
 
 while True:
     try:
-        f = open(raw_input('type the path of the .txt file:'))
+        f = open(raw_input('Type the path of the .txt file:'))
         print 'File successfully open'
         break
     except IOError:
